@@ -54,12 +54,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('/public/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('./public/space.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const joshTexture = new THREE.TextureLoader().load('/public/cube.jpg');
+const joshTexture = new THREE.TextureLoader().load('./public/cube.jpg');
 
 const josh = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: joshTexture }));
 
@@ -67,8 +67,8 @@ scene.add(josh);
 
 // Planet
 
-const moonTexture = new THREE.TextureLoader().load('/public/planet2.png');
-const normalTexture = new THREE.TextureLoader().load('/public/planet1.png');
+const moonTexture = new THREE.TextureLoader().load('./public/planet2.png');
+const normalTexture = new THREE.TextureLoader().load('./public/planet1.png');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
